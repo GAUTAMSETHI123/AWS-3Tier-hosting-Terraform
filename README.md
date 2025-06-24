@@ -44,8 +44,7 @@ Before getting started, ensure you have the following:
 
 ## <u>🗂️ Architecture Overview</u>
 
-> _Insert architecture diagram here_  
-> 📌 Tip: Use [Excalidraw](https://excalidraw.com/) or [Canva](https://canva.com/) to create a neat visual
+![Architecture Diagram](./assets/3TierArch.png)
 
 Expected layout:
 - **Tier 1 (Presentation Layer):** Load Balancer (e.g., ALB/ELB)
