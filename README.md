@@ -61,3 +61,25 @@ In this architecture:
 - The **application tier** interacts with an **Aurora MySQL Multi-AZ database** for storage and retrieval.  
 - **Load balancing, health checks, and auto-scaling groups** are configured at each layer to maintain availability and scalability.  
 
+## ⚙️ Implementation Options
+
+This project supports multiple implementation approaches:
+
+1. **Manual Setup**  
+   Follow the step-by-step instructions in the walkthrough to manually create and configure all AWS resources.
+
+2. **Infrastructure as Code (IaC)**  
+   Use the CloudFormation templates in the `/cloudformation` directory to automate deployment.
+
+3. **AWS CLI Deployment**  
+   Use the AWS CLI commands provided in the **AWS CLI Deployment Guide** for a scripted setup.
+
+---
+
+## 🧩 Key Components
+
+### 🔹 Network Layer
+- **VPC** with public and private subnets across two Availability Zones  
+- **Internet Gateway** for public internet access  
+- **NAT Gateways** for private subnet internet access  
+- **Route Tables & Security Groups** for isolation and security  
