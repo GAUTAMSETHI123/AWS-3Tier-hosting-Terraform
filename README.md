@@ -85,3 +85,53 @@ This project supports multiple implementation approaches:
 - **Route Tables & Security Groups** for isolation and security  
 
 ![Architecture Diagram](./assets/VPC.png)
+
+---
+
+## 🗂️ Architecture Components
+
+### 🗄️ Database Layer
+- **Aurora MySQL Cluster** with Multi-AZ deployment  
+- **Private Subnet Placement** for enhanced security  
+- **Database Subnet Group** for proper subnet association  
+
+---
+
+### ⚙️ Application Layer
+- **Node.js application** running on EC2 instances  
+- **Auto Scaling Group (ASG)** for high availability and scalability  
+- **Internal Application Load Balancer (ALB)** for traffic distribution  
+- **Aurora MySQL integration** for persistent data storage  
+
+---
+
+### 🌐 Web Layer
+- **Nginx web server** serving a React.js frontend  
+- **Auto Scaling Group (ASG)** for high availability and scalability  
+- **Public Application Load Balancer (ALB)** for internet-facing traffic  
+- **API proxying** to the application tier  
+
+---
+
+## 🔒 Security Enhancements
+The project includes several security best practices:
+
+- **Secure Credential Management:** AWS Secrets Manager for database credentials  
+- **Network Isolation:** Proper subnet configuration & security groups  
+- **SQL Injection Prevention:** Parameterized queries in application code  
+- **Least Privilege Access:** IAM roles with minimal required permissions  
+- **HTTPS Support:** SSL/TLS enabled for secure communication  
+
+---
+
+## 🚀 Modernization Options
+This project can be extended with modern AWS services:
+
+- **Containerization:** Deploy using Amazon ECS or EKS  
+- **Serverless:** Migrate the application tier to AWS Lambda & API Gateway  
+- **CI/CD Automation:** Implement pipelines with AWS CodePipeline  
+- **Monitoring & Observability:** Integrate with CloudWatch & X-Ray  
+- **Edge Optimization:** Use CloudFront for global content delivery  
+
+---
+
