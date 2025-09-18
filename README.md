@@ -83,3 +83,5 @@ This project supports multiple implementation approaches:
 - **Internet Gateway** for public internet access  
 - **NAT Gateways** for private subnet internet access  
 - **Route Tables & Security Groups** for isolation and security  
+
+./assets/3TierArch.png
