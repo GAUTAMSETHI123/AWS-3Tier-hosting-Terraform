@@ -93,8 +93,8 @@ This project supports multiple implementation approaches:
 ### 🗄️ Database Layer
 - **Aurora MySQL Cluster** with Multi-AZ deployment  
 - **Private Subnet Placement** for enhanced security  
-- **Database Subnet Group** for proper subnet association  
-
+- **Database Subnet Group** for proper subnet association
+  ![Architecture Diagram](./assets/DBConfig.png)
 ---
 
 ### ⚙️ Application Layer
@@ -102,7 +102,7 @@ This project supports multiple implementation approaches:
 - **Auto Scaling Group (ASG)** for high availability and scalability  
 - **Internal Application Load Balancer (ALB)** for traffic distribution  
 - **Aurora MySQL integration** for persistent data storage  
-
+![Architecture Diagram](./assets/ConfigureInstanceDetails.png)
 ---
 
 ### 🌐 Web Layer
@@ -110,7 +110,7 @@ This project supports multiple implementation approaches:
 - **Auto Scaling Group (ASG)** for high availability and scalability  
 - **Public Application Load Balancer (ALB)** for internet-facing traffic  
 - **API proxying** to the application tier  
-
+![Architecture Diagram](./assets/WebPage.png)
 ---
 
 ## 🔒 Security Enhancements
@@ -120,8 +120,8 @@ The project includes several security best practices:
 - **Network Isolation:** Proper subnet configuration & security groups  
 - **SQL Injection Prevention:** Parameterized queries in application code  
 - **Least Privilege Access:** IAM roles with minimal required permissions  
-- **HTTPS Support:** SSL/TLS enabled for secure communication  
-
+- **HTTPS Support:** SSL/TLS enabled for secure communication
+ ![Architecture Diagram](./assets/WebTierSG.png) 
 ---
 
 ## 🚀 Modernization Options
